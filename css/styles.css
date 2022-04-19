@@ -28,7 +28,7 @@ img{
 .list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 .container{
     margin-right: auto;
@@ -38,8 +38,10 @@ img{
     padding-left: 15px;
 }
 .header{
-    padding-top: 32px; 
-    padding-bottom: 32px; 
+    padding-top: 24px; 
+    padding-bottom: 24px;  
+
+    border: 1px solid #EEEEEE;  
 }
 .header .container{
     display: flex; 
@@ -237,11 +239,14 @@ span {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--main-color);
-    border: var(--body-color);
+    border-bottom: var(--body-color); 
 }
 .footer-list{
     margin-top: 20px;
     color: var(--title-color); 
+} 
+.footer-list-item:not(:last-child){
+    margin-bottom: 9px;
 } 
 .footer-logo{
     color: var(--title-color);
@@ -254,7 +259,6 @@ span {
 }
 
 .footer-address{
-    margin-bottom: 10px; 
     color: var(--title-color);
     font-style: normal; 
     font-weight: 400; 
@@ -279,9 +283,7 @@ span {
 .footer-link:focus {
     color: var(--accent-color);
 }
-.footer-mail{
-    margin-bottom: 10px;  
-}
+
 /* portfolio */
 
 .visually-hidden{
@@ -342,13 +344,13 @@ span {
     display: flex;
     flex-wrap: wrap; 
     margin-left: -30px;
-    margin-bottom: -20px; 
+    margin-bottom: -30px; 
 }
 .gallery-item{
     width: calc(100% / 3 - 30px); 
     margin-left: 30px;
-    margin-bottom: 20px; 
-    border: 1px solid #EEEEEE;
+    margin-bottom: 30px; 
+    border-bottom: 1px solid #EEEEEE;  
 }
 .gallery-text{
     padding: 20px 24px;  
